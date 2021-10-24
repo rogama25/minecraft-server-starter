@@ -1,0 +1,28 @@
+{
+  "name": "mc-server-starter",
+  "version": "1.0.0",
+  "description": "A web project that allows you to wake up your computer. Intended to use with a Minecraft Server that shuts down automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogama25/mc-server-starter.git"
+  },
+  "author": "rogama25",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rogama25/mc-server-starter/issues"
+  },
+  "homepage": "https://github.com/rogama25/mc-server-starter#readme",
+  "dependencies": {
+    "broadcast-address": "^1.0.2",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "minecraft-server-util": "^3.6.1",
+    "wol": "^1.0.7"
+  },
+  "type": "module"
+}

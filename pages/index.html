@@ -1,0 +1,71 @@
+<head>
+    <script src="/public/index.js"></script>
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <style>
+        body > main, #alerts{
+            background-color: #D3D3D3;
+        }
+    </style>
+</head>
+<body onload="info()" class="d-flex flex-column h-100">
+    <nav class="navbar navbar-dark bg-dark px-2">
+        <span class="navbar-brand mb-0 h1">Minecraft server starter</span>
+        <span class="navbar-right"
+            ><a
+                href="https://github.com/rogama25/mc-server-starter"
+                class="link-secondary text-decoration-none"
+                ><i class="bi-github"></i> Ver proyecto en GitHub</a
+            ></span
+        >
+    </nav>
+    <div id="alerts"></div>
+
+    <main
+        class="
+            text-center
+            d-flex
+            justify-content-center
+            align-items-center
+            flex-grow-1
+        "
+    >
+        <div class="rounded border p-5 bg-light">
+            <div id="info-server">
+                <img src="/public/loading.gif" />
+            </div>
+            <button
+                id="start"
+                type="button"
+                id="start"
+                class="btn btn-primary"
+                onclick="start()"
+            >
+                Iniciar
+            </button>
+            <button
+                id="info"
+                type="button"
+                class="btn btn-info"
+                onclick="info()"
+                disabled
+            >
+                Recargar
+            </button>
+        </div>
+    </main>
+</body>
